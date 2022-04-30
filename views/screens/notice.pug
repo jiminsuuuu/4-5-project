@@ -1,0 +1,12 @@
+extends ./base.pug
+
+block content
+    form(action="/review" method="get").btnWrapper
+        button(type="submit").btnWrapper__w 작성하기
+
+    each p in potato
+        div.notice
+            div.notice__id #{p.id}
+            div.notice__title #{p.title}
+            div.notice__user #{p.user}
+            div.notice__createdAt #{p.createdAt}

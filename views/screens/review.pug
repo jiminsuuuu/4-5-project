@@ -1,0 +1,8 @@
+extends ../layouts/base.pug
+
+block content
+    form(action="/review" athod="post").review
+        input(type="text" name="title" placeholder="제목...").review__title
+        input(type="text" name="user" placeholder="사용자").review__user
+        textarea(name="content" placeholder="내용을 쓰세요").review__content
+        button(type= "submit") 작성완료 

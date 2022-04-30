@@ -1,0 +1,112 @@
+.notice {
+    width: 100%;
+    height: 40px;
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  
+    border: 1px solid #d7d7d7d7;
+    border-radius: 7px;
+  
+    padding: 5px;
+  
+    transition: 0.5s;
+  }
+  
+  .notice:hover {
+    border: 1px solid rgb(74, 74, 252);
+  }
+  
+  .notice .notice__id {
+    width: 5%;
+    text-align: center;
+  }
+  
+  .notice .notice__title {
+    width: 65%;
+  }
+  
+  .notice .notice__author {
+    width: 15%;
+  }
+  
+  .notice .notice__createdAt {
+    width: 15%;
+  }
+  
+  .btnWrapper {
+    width: 100%;
+    margin-bottom: 30px;
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .btnWrapper .btnWrapper__w {
+    outline: none;
+    border: none;
+    background: rgb(19, 90, 50);
+    width: 120px;
+    height: 25px;
+    color: #fff;
+  
+    border-radius: 3px;
+  
+    cursor: pointer;
+  
+    transition: 0.5s;
+  }
+  
+  .btnWrapper .btnWrapper__w:hover {
+    background: none;
+    color: rgb(19, 90, 50);
+    box-shadow: 0px 0px 10px #999;
+  }
+  
+  .review {
+    width: 100%;
+    padding: 20px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .review .review__title,
+  .review .review__user,
+  .review .review__content {
+    width: 100%;
+    background: none;
+    outline: none;
+    border: #d7d7d7;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 3px #d7d7d7;
+    padding: 10px;
+  }
+  
+  .review .review__title,
+  .review .review__user {
+    height: 30px;
+  }
+  
+  .review .notice__user {
+    height: 300px;
+    resize: none;
+  }
+  
+  .review button {
+    width: 130px;
+    height: 30px;
+  
+    border: #d7d7d7;
+    background: rgba(0, 0, 255, 0.694);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
