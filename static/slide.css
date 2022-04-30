@@ -51,19 +51,17 @@
 ul, li {list-style: none;}
 
 [name="slide"] {display: none;}
-.slidebox {width:100%; height: 300px; margin:0 auto;}
+.slidebox {width:100%;  margin:0 auto;}
 
-.slidebox img {max-width: 100%;}
+.slidebox img {max-width: 100%; }
 .slidebox .slidelist {
     white-space: nowrap;
     font-size: 0;
     overflow: hidden;
 }
 
-.main{
-    width: 100%;
-    height: 300px;
-}
+
+
 
 .slidebox .slideitem {
     position:relative;

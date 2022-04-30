@@ -1,5 +1,101 @@
 .galaxy22_box{
     width: 100%;
-    height: 300px;
-    background-color: gold;
+    height: 700px;
+}
+
+.galaxy22_title{
+    width: 100%;
+    height: 25%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.galaxy22_title p {
+    margin: 10px 10px;
+}
+
+.galaxy22_title p:nth-child(1){
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.galaxy22_title p:nth-child(2){
+    color: blue;
+
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.galaxy_product_box {
+    width: 100%;
+    height: 75%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.galaxy_product_img_box {
+    width: 300px;
+    height: 475px;
+
+    margin: 0px 40px 0px 40px;
+}
+
+.galaxy_product_img {
+    widows: 100%;
+    height: 275px;
+
+    border-radius: 2px solid black;
+
+}
+
+.galaxy_product_font_box {
+    width: 100%;
+    height: 200px;
+}
+
+.galaxy_product_name {
+    font-size: 20px;
+    font-weight: 600;
+
+    margin-top: 8px;
+}
+
+.galaxy_product_pride_box {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.galaxy_product_pride p{
+    font-size: 25px;
+    font-weight: 600;
+
+    margin-top: 3px;
+
+
+
+    color: red;
+}
+
+.galaxy_product_releasepride{
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 5px;
+    margin-top: 8px;
+}
+
+.galaxy_product_releasepride p:nth-child(2){
+    margin-left: 5px;
+    text-decoration: line-through;
 }
