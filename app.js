@@ -13,7 +13,7 @@ app.use("/static", express.static(path.join(__dirname, "/static")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 
-app.get("/", globalRouter);
+app.use("/", globalRouter);
 
 app.listen(PORT, () => {
     console.log("SERVER START")
