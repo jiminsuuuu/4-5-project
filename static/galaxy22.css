@@ -1,6 +1,8 @@
 .galaxy22_box{
     width: 100%;
     height: 700px;
+
+    background-color: whitesmoke;
 }
 
 .galaxy22_title{
@@ -49,28 +51,73 @@
 }
 
 .galaxy_product_img {
-    widows: 100%;
+    width: 100%;
     height: 275px;
     
-    border: 1px dotted grey;
-    border: 1px dashed grey;
-    border: 1px double grey;
-    border: 1px groove grey;
+    border: 0.5px dotted whitesmoke;
+    border: 0.5px dashed whitesmoke;
+    border: 0.5px double whitesmoke;
+    border: 0.5px groove whitesmoke;
 
-    border-radius: 2px solid black;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
+
+.galaxy_product_img_empty_box {
+    width: 300px;
+    height: 475px;
+
+    margin: 0px 40px 0px 40px;
+
+    background-color: whitesmoke;
+
+}
+
+.galaxy_product_img_empty_box .galaxy_product_img {
+    width: 100%;
+    height: 275px;
+
+    border: none;
+
+    background-color: whitesmoke;
+}
+
 
 .galaxy_product_font_box {
     width: 100%;
     height: 200px;
+    
+}
+
+.galaxy_product_font {
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    background-color: white;
 }
 
 .galaxy_product_name {
+    width: 100%;
+
     font-size: 20px;
     font-weight: 600;
 
-    margin-top: 8px;
+
+
+    margin-left: 10px;
+
+
 }
 
 .galaxy_product_pride_box {
@@ -78,6 +125,11 @@
 
     display: flex;
     flex-direction: row;
+
+
+    margin-left: 10px;
+
+
 
 }
 
@@ -103,4 +155,77 @@
 .galaxy_product_releasepride p:nth-child(2){
     margin-left: 5px;
     text-decoration: line-through;
+}
+
+
+.galaxy_product_exp {
+    width: 100%;
+    height: 30px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    color: gray;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.galaxy_product_exp p {
+    margin-left: 10px;
+}
+
+.galaxy_product_discount_box {
+    width: 100%;
+    height: 110px;
+
+    background-color: white;
+}
+
+.galaxy_product_discount1 {
+    width: 100%;
+    height: 30px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+
+.galaxy_product_discount1 p {
+    margin-top: 10px; 
+}
+
+.galaxy_product_discount1 p:nth-child(2) {
+    margin-right: 10px; 
+}
+
+.galaxy_product_discount2 {
+    width: 100%;
+    height: 55px;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+.galaxy_product_discount2 p:nth-child(2) {
+    margin-right: 10px; 
+
+    color : blue
+}
+
+
+
+.galaxy_product_discount1,
+.galaxy_product_discount2 p {
+    font-size: 13px;
+    font-weight: 400;
 }

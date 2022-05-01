@@ -1,13 +1,7 @@
 .header{
     width:100%;
-    height: 90px;
-
-    position: fixed;
-
     background-color: white;
-
-    z-index: 2;
-
+    z-index: 1;
 }
 
 .header_box{
@@ -16,6 +10,8 @@
 
     display: flex;
     flex-direction: row;
+
+    
 }
 
 .header_left{
@@ -26,6 +22,8 @@
 
     display: flex;
     flex-direction: row;
+
+    
 }
 
 .header_left .icon_box {
