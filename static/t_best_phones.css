@@ -1,0 +1,199 @@
+.t_best_phones{
+    width: 100%;
+    height: 1200px;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.whole{
+    width: 80%;
+    height: 100%;
+
+}
+
+.t_best_phones_title{
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.t_best_phones_title p:nth-child(1) {
+    font-size: 25px;
+    font-weight: 800;
+
+    
+}
+
+.t_best_phones_title p:nth-child(2) {
+    font-size: 15px;
+    font-weight: 400;
+    
+    margin-top: 10px;
+}
+
+
+.t_best_phones_rowbox1 {
+    width: 100%;
+    height: 600px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.t_best_phones_rowbox2 {
+    width: 100%;
+    height: 600px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.t_best_phones_box {
+    width: 280px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    margin: 0px 10px 0px 10px;
+}
+
+.t_best_phones_img_box {
+    width: 100%;
+    height: 300px;
+
+    border: 0.5px dotted whitesmoke;
+    border: 0.5px dashed whitesmoke;
+    border: 0.5px double whitesmoke;
+    border: 0.5px groove whitesmoke;    
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.t_best_phones_font_box {
+    width: 100%;
+
+}
+
+.t_best_phones_name {
+    width: 100%;
+    height: 40px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-left: 10px;
+}
+
+.t_best_phones_name p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.t_best_phones_pride_box{
+    width: 100%;
+    height: 30px;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.t_best_phones_pride p:nth-child(1){
+    font-size: 25px;
+    font-weight: 700;
+
+    margin-left: 10px;
+
+    color: red;
+}
+
+.t_best_phone_release_pride  {
+    display: flex;
+    flex-direction: row;
+}
+
+.t_best_phone_release_pride p{
+    margin: 5px 0px 9px 5px;
+}
+
+.t_best_phone_release_pride p:nth-child(2) {
+    text-decoration: line-through;
+}
+.t_best_phones_exp {
+    width: 100%;
+    height: 30px;
+
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.t_best_phones_exp p {
+    color : gray;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+.t_best_phones_discount_box{
+    width: 100%;
+    height: 100px;
+
+}
+
+.t_best_phones_discount1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.t_best_phones_discount1 {
+    margin-top: 10px;
+}
+.t_best_phones_discount2 p:nth-child(2){
+    color: blue;
+
+    background-color: yellow;
+}
+
+.t_best_phones_discount2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.t_best_phones_discount1,
+.t_best_phones_discount2 p {
+    font-size: 13px;
+    font-weight: 400;
+
+    color: #555555;
+
+    margin: 5px 10px;
+}
