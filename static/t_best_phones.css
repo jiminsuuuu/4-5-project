@@ -148,7 +148,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    
 }
 
 .t_best_phones_exp p {
@@ -156,6 +157,8 @@
 
     font-size: 13px;
     font-weight: 500;
+
+    margin-left: 9px;
 }
 
 
