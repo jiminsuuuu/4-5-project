@@ -10,3 +10,17 @@ block content
             div.notice__title #{p.title}
             div.notice__user #{p.user}
             div.notice__createdAt #{p.createdAt}
+        form(name="myform" id="myform" method="post" action="./save")
+            <fieldset>
+                <legend>이모지 별점
+                label(for="rate1")⭐
+                input(type="radio" name="rating" value="1" id="rate1")
+                label(for="rate2")⭐
+                input(type="radio" name="rating" value="2" id="rate2")
+                label(for="rate3")⭐
+                input(type="radio" name="rating" value="3" id="rate3")
+                label(for="rate4")⭐
+                input(type="radio" name="rating" value="4" id="rate4")
+                label(for="rate5")⭐
+                input(type="radio" name="rating" value="5" id="rate5")
+            
