@@ -7,14 +7,18 @@ html(lang="en")
         title Document
         link(rel="stylesheet", href="/css/styles.css")
     body 
-        form(action="/signup" method="POST")
+        form(action="/login/signup/check" method="POST")
             div
-                label(htmlFor="email") EMAIL 
-                input(type="email" name="email" id="email" required)
+                label(htmlFor="email") 이메일 주소 
+                input(type="email" name="email" id="email" placeholder="이메일을 입력해주세요." required)
             div
-                label(htmlFor="password") PASSWORD 
-                input(type="password" name="password" id="password" required)
+                label(htmlFor="password") 비밀번호 
+                input(type="password" name="password" id="password" placeholder="비밀번호을 입력해주세요." required)
             div
-                label(htmlOFr="nickname") NICKNAME
-                input(type="text" name="nickname" id="nickname" required)
-            input(type="submit" value="LOGIN")
+                label(htmlFor="name") 이름
+                input(type="text" name="name" id="name" placeholder="이름을 입력해주세요." required)
+
+            div
+                label(htmlFor="phone_number") 전화번호
+                input(type="tel" name="phone_number" id="phone_number" placeholder="전화번호 입력해주세요." required)
+            input(type="submit" value="회원가입하기")
