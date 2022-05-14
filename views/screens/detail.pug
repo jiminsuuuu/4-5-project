@@ -1,8 +1,8 @@
 extends ../layouts/base.pug
 
 block content 
-    form.detailForm(action="/b/notice" method="get").wf
-        input(type="text" readonly value=kimchi.title).review__title
-        input(type="text" readonly value=kimchi.user).review__user
-        textarea(name="content" readonly).review__content #{kimchi.content}
+    form.detailForm(action="/b/notice" method="POST").wf
+        input(type="text"  value=kimchi.title).review__title
+        input(type="text"  value=kimchi.user).review__user
+        textarea(name="content").review__content #{kimchi.content}
         button(type="submit") 목록
