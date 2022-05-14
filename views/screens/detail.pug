@@ -1,9 +1,8 @@
-extends ./base.pug
+extends ../layouts/base.pug
 
 block content 
-    form.writeForm(action="/b/notice" method="get").wf
-        p #{kimchi.createdAt}
-        input(type="text" readonly value=kimchi.title).wf__title
-        input(type="text" readonly value=kimchi.user).wf__user
-        textarea(name="content" readonly).wf__content #{kimchi.content}
+    form.detailForm(action="/b/notice" method="get").wf
+        input(type="text" readonly value=kimchi.title).review__title
+        input(type="text" readonly value=kimchi.user).review__user
+        textarea(name="content" readonly).review__content #{kimchi.content}
         button(type="submit") 목록

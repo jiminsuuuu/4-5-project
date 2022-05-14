@@ -16,8 +16,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/", globalRouter);
-app.use("/b", boardRouter);
 app.use("/login", loginRouter);
+app.use("/b", boardRouter)
 
 app.listen(PORT, () => {
     console.log("SERVER START");

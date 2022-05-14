@@ -60,37 +60,10 @@ const reviewPostController = (req, res) => {
   }
 };
 
-const detailPageController = (req, res) => {
-    const selectQuery = `
-      SELECT  id,
-              title,
-              content,
-              author,
-              DATE_FORMAT(createdAt, "%Y.%m.%d") AS createdAt
-        FROM  notice
-       WHERE  id = ${req.query.noticeId}
-    `;
-  
-    try {
-      db.query(selectQuery, (error, rows) => {
-        if (error) {
-          console.error(error);
-          throw "쿼리 실행 에러";
-        }
-  
-        res.render("detail", {kimchi : rows[0] });
-      });
-    } catch (error) {
-      console.error(error);
-      res.redirect("/b/notice");
-    }
-  };
-
 const boardControllers = {
   noticeController,
   reviewScreenController,
   reviewPostController,
-  detailPageController,
 };
 
 module.exports = boardControllers;
