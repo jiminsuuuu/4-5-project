@@ -53,7 +53,7 @@ router.post("/signup/check", (req,res,next) => {
                     "${req.body.email}",
                     "${req.body.password}",
                     "${req.body.name}",
-                    "${req.body.phone_number}",
+                    "${req.body.phone_number}"
                 )
                 `;
     
@@ -62,7 +62,7 @@ router.post("/signup/check", (req,res,next) => {
                         console.error(error);
                         return res.status(400).send("회원가입에 실패했습니다.");
                     } else {
-                        res.render("screens/main");
+                        res.redirect("/");
                     }
                 });
             }
@@ -79,12 +79,12 @@ router.post("/check", (req,res,next) => {
                 password  
         FROM    signup
        WHERE    email = "${req.body.email}"
-         AND    passwword = "${req.body.password}"
+         AND    password = "${req.body.password}";
     `;
   
     conn.query(emailCheckQuery, (error,result) => {
       if(error) {
-        return res.status(403).send("아이디 또는 비밀번호 또는 닉네임이 틀렸습니다.");
+        return res.status(403).send("에러!");
             } else {
             if (result.length > 0) {
                 res.render("screens/main");
